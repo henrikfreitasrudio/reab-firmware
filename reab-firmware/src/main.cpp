@@ -155,21 +155,29 @@ void loop()
     }
 
     // =========================
-    // 🎯 METAS
+    // 🎯 METAS (ATUALIZADAS)
     // =========================
     if (calibrado)
     {
-        if (angulo_rel >= 30 && angulo_rel < 60)
+        if (angulo_rel >= 15 && angulo_rel < 30)
         {
-            Serial.println("Meta 1 (30°)");
+            Serial.println("Meta 1 (15°)");
         }
-        else if (angulo_rel >= 60 && angulo_rel < 90)
+        else if (angulo_rel >= 30 && angulo_rel < 50)
         {
-            Serial.println("Meta 2 (60°)");
+            Serial.println("Meta 2 (30°)");
         }
-        else if (angulo_rel >= 90)
+        else if (angulo_rel >= 50 && angulo_rel < 70)
         {
-            Serial.println("Meta FINAL (90°)");
+            Serial.println("Meta 3 (50°)");
+        }
+        else if (angulo_rel >= 70 && angulo_rel < 85)
+        {
+            Serial.println("Meta 4 (70°)");
+        }
+        else if (angulo_rel >= 85)
+        {
+            Serial.println("Meta 5 (90°)");
         }
     }
 
